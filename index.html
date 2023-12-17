@@ -7,6 +7,16 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #game-wrapper {
+            max-width: 400px;
+            width: 100%;
         }
 
         #board {
@@ -51,9 +61,11 @@
 </head>
 <body>
 
-<div id="board"></div>
-<div id="result"></div>
-<button id="reload-btn" onclick="resetGame()">Reload</button>
+<div id="game-wrapper">
+    <div id="board"></div>
+    <div id="result"></div>
+    <button id="reload-btn" onclick="resetGame()">Reload</button>
+</div>
 
 <script>
     let currentPlayer = 'X';
@@ -127,3 +139,4 @@
 
 </body>
 </html>
+
